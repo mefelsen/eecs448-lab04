@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>The Boring Company</title>
+  The Boring Company<br>
+  <script type="text/javascript"
+                 src="formChecker.js">
+  </script>
+  <link href="customerstyle.css"
+            rel="stylesheet"
+            type="text/css"/>
+</head>
+  <body>
+    <form action="customerBackend.php" method="post" onsubmit="return formChecker();" autocomplete="off">
+      <div class="cart">
+        Not a flamethrower<br>
+        <input type="number" id="flamethrower" required><br>
+        Boring Brick<br>
+        <input type="number" id="brick" required><br>
+        Boring Hat<br>
+        <input type="number" id="hat" required><br>
+      </div>
+      <div class="profile">
+          <label>Email: </label>
+          <input type="email" name="email" required><br>
+          <label>Password: </label>
+          <input type="text" name="password" required><br>
+        </div><br>
+      <div class="shipping">
+        Shipping<br>
+          <input type="radio" name="ship" value="Free" checked>Free 7-day<br>
+          <input type="radio" name="ship" value="3-Day">$5 3-day<br>
+          <input type="radio" name="ship" value="Overnight">$50 overnight<br><br>
+      </div>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>

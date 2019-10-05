@@ -1,0 +1,19 @@
+.profile {
+  color: green;
+}
+.cart {
+  color: blue;
+}
+.shipping {
+  color: red;
+}
+button {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border-color: white;
+  color: red;
+  padding: 10px;
+  font-size: 16px;
+}
